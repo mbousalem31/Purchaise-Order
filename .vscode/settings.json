@@ -1,0 +1,20 @@
+{
+  // uncomment entries once all libraries have been installed via 'npm install'
+  "eslint.validate": [
+    // "cds",
+    // "csn",
+    // "csv",
+    // "csv (semicolon)",
+    // "tab",
+    // "tsv"
+  ],
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "SQLite",
+      "name": "india.db",
+      "database": "${workspaceFolder:mycapm}/india.db"
+    }
+  ],
+  "SAP HANA Database Explorer.ShowXsAdvancedConnections": true
+}

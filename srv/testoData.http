@@ -1,0 +1,123 @@
+###
+GET http://loccdalhost:4004/odata/v4/CatalogService/purchaseorder
+
+###
+GET http://localhost:4004/odata/v4/CatalogService/worker?$top=2
+
+###
+GET http://localhost:4004/odata/v4/CatalogService/worker/05ff9983-9b6a-4375-96f1-4a1c85ccbae6
+
+//POST CALL
+###
+POST http://localhost:4004/odata/v4/CatalogService/worker HTTP/1.1
+Content-Type: application/json
+
+{
+"firstName": "Ananya",
+"lastName": "Srivastava",
+"Gender": "F",
+"phoneNumber": "+91-6876866889",
+"Currency_code": "INR",
+"salaryAmount": 68632853
+}
+
+###
+PUT http://localhost:4004/odata/v4/CatalogService/worker/230fbac9-bfe9-4323-81fa-67b93d6de8c0 HTTP/1.1
+Content-Type: application/json
+
+{
+"Currency_code": "HBO",
+"salaryAmount": 999999
+}
+
+###
+PATCH http://localhost:4004/odata/v4/CatalogService/worker/429ce520-6b5c-40b8-8dc8-e5c3937202a3 HTTP/1.1
+Content-Type: application/json
+
+{
+"salaryAmount": 10001
+}
+
+###
+DELETE http://localhost:4004/odata/v4/CatalogService/worker/230fbac9-bfe9-4323-81fa-67b93d6de8c0 HTTP/1.1
+
+
+###
+GET http://localhost:4004/odata/v4/CatalogService/worker
+
+###
+GET http://localhost:4004/odata/v4/CatalogService/address
+
+###
+POST http://localhost:4004/odata/v4/NewCQLService/insertWorker  HTTP/1.1
+Content-Type: application/json 
+
+{
+
+      "firstName": "Mohammed",
+      "lastName": "BOUSALEM",
+      "Gender": "M",
+      "phoneNumber": "+33758426578",
+      "email": "momo@gmail.com",
+      "currency_code": "INR",
+      "salaryAmount": 1200
+}      
+
+###
+PUT http://localhost:4004/odata/v4/NewCQLService/updateWorker/148feb68-8498-4d04-9fbd-e54caeef2bd4  HTTP/1.1
+Content-Type: application/json
+
+{
+"firstName": "kareena",
+"lastName":"Kapoor"
+}
+
+###
+DELETE http://localhost:4004/odata/v4/NewCQLService/deleteWorker/310ea107-f58b-4367-aabc-9c74d2fc8c7f  HTTP/1.1
+Content-Type: application/json
+
+
+###
+POST http://localhost:4004/odata/v4/my-increment/hike   HTTP/1.1
+Content-Type: application/json
+
+{
+      "ID":"1ed6fa65-aee1-49fd-9d35-fa17627b3efb"
+}
+
+###
+GET http://localhost:4004/odata/v4/highsal/getHightSalary()
+
+### after implementing xsuaa
+GET http://localhost:4004/odata/v4/CatalogService/purchaseorder
+
+###
+
+GET http://localhost:4004/odata/v4/CatalogService/purchaseorder
+Content-Type: application/json
+Authorization: Basic mohammed:welcome
+
+### after implementing xsuaa
+
+GET http://localhost:4004/odata/v4/CatalogService/purchaseorder
+Content-Type: application/json
+Authorization: Basic Bousalem:welcome11
+
+
+
+### after implementing xsuaa
+
+GET http://localhost:4004/odata/v4/CatalogService/worker 
+Content-Type: application/json
+Authorization: Basic mohammed:welcome
+
+
+### after implementing xsuaa
+
+GET http://localhost:4004/odata/v4/CatalogService/worker 
+Content-Type: application/json
+Authorization: Basic Bousalem:welcome11
+###
+GET http://localhost:4004/odata/v4/CatalogService/worker 
+Content-Type: application/json
+Authorization: Basic Busalem:welcome1

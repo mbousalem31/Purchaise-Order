@@ -1,0 +1,14 @@
+{
+        "name": "deploy",
+        "engines": {
+                "node": "^12.18.0 || ^14.0.0 || ^16.0.0 || ^18.0.0"
+        },
+        "scripts": {
+                "start": "node node_modules/@sap/hdi-deploy/deploy.js  --auto-undeploy"
+        },
+        "dependencies": {
+                "@sap/hana-client": "^2.22.32",
+                "@sap/hdi-deploy": "^5.3.2",
+                "npm": "^10.9.0"
+        }
+}
