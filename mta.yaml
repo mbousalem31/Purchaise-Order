@@ -74,7 +74,7 @@ modules:
     type: html5
     path: app/mycapm_fiori
     build-parameters:
-      build-result: dist
+      build-result: mycapm_fiori
       builder: custom
       commands:
         - npm install
@@ -138,4 +138,4 @@ build-parameters:
     - builder: custom
       commands:
         - npm ci
-        - npm install --production
+        - npx cds build --production
