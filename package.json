@@ -7,7 +7,7 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^8",
-    "@cap-js-community/odata-v2-adapter": "^2.x",
+    "@cap-js-community/odata-v2-adapter": "^1.13.7",
     "@sap/hana-client": "^2.22.32",
     "@sap/xssec": "^4",
     "axios": "^1.7.5",
