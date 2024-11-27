@@ -137,5 +137,5 @@ build-parameters:
   before-all:
     - builder: custom
       commands:
-        - npm install --production
-        - npx cds build --production
+        - npm install
+        - npx cds build 
