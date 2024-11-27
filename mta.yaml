@@ -139,4 +139,4 @@ build-parameters:
       commands:
         - npm install
         - npx cds build
-        - cf deploy mta_archives/mycapm_1.0.0.mtar
+
